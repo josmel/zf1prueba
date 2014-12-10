@@ -1,0 +1,38 @@
+<?php
+echo $this->doctype();
+$this->headTitle()->setSeparator(' - ');
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php
+echo $this->headTitle();
+?>
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+    <div id="logo">
+        <h1><a href="<?php echo $this->url(array('controller' => 'index')); ?>">Admin</a></h1>
+    </div>
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+    <!-- start content -->
+    <div id="content">
+            <?php echo $this->layout()->content; ?>
+    </div>
+    
+    <hr>
+<a href="/index"> Regresar </a>
+    <!-- end content -->
+    <br style="clear: both;" />
+</div>
+<!-- end page -->
+<!-- start footer -->
+<div id="footer">
+
+</div>
+<!-- end footer -->
+</body>
+</html>
